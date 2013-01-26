@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-AptReviews::Application.config.secret_token = 'ff874d22427ce92f1265b38e63291a94edf14db38b1832b649e481b6ea74e1743d442c8b3da2b34ff24073d60cb1defdd85e016c90d57b5a766a06bda630a4d1'
+AptReviews::Application.config.secret_token = '3d8383929659fc68eb319bd0810df95ac2e5bc01a48fcf8d0bd700591faf40d1078d50537031f9737e8764465331b7107dc8a2c73a9bef989ce49240b60717cd'

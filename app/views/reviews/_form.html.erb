@@ -1,0 +1,101 @@
+<%= form_for(@review) do |f| %>
+  <% if @review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+      <% @review.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :overall %><br />
+    <%= f.number_field :overall %>
+  </div>
+  <div class="field">
+    <%= f.label :locscore %><br />
+    <%= f.number_field :locscore %>
+  </div>
+  <div class="field">
+    <%= f.label :overallvalue %><br />
+    <%= f.number_field :overallvalue %>
+  </div>
+  <div class="field">
+    <%= f.label :officestaff %><br />
+    <%= f.number_field :officestaff %>
+  </div>
+  <div class="field">
+    <%= f.label :maintenanceservice %><br />
+    <%= f.number_field :maintenanceservice %>
+  </div>
+  <div class="field">
+    <%= f.label :qualityofamenities %><br />
+    <%= f.number_field :qualityofamenities %>
+  </div>
+  <div class="field">
+    <%= f.label :noise %><br />
+    <%= f.number_field :noise %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :reviewdesc %><br />
+    <%= f.text_area :reviewdesc %>
+  </div>
+  <div class="field">
+    <%= f.label :nickname %><br />
+    <%= f.text_field :nickname %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :reviewertype %><br />
+    <%= f.number_field :reviewertype %>
+  </div>
+  <div class="field">
+    <%= f.label :professional %><br />
+    <%= f.check_box :professional %>
+  </div>
+  <div class="field">
+    <%= f.label :emailonpost %><br />
+    <%= f.check_box :emailonpost %>
+  </div>
+  <div class="field">
+    <%= f.label :emailoncomment %><br />
+    <%= f.check_box :emailoncomment %>
+  </div>
+  <div class="field">
+    <%= f.label :publishsocial %><br />
+    <%= f.check_box :publishsocial %>
+  </div>
+  <div class="field">
+    <%= f.label :ipaddress %><br />
+    <%= f.text_field :ipaddress %>
+  </div>
+  <div class="field">
+    <%= f.label :propertyid %><br />
+    <%= f.number_field :propertyid %>
+  </div>
+  <div class="field">
+    <%= f.label :reviewid %><br />
+    <%= f.number_field :reviewid %>
+  </div>
+  <div class="field">
+    <%= f.label :featuredreview %><br />
+    <%= f.check_box :featuredreview %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

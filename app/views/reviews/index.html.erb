@@ -1,0 +1,63 @@
+<h1>Listing reviews</h1>
+
+<table>
+  <tr>
+    <th>Overall</th>
+    <th>Locscore</th>
+    <th>Overallvalue</th>
+    <th>Officestaff</th>
+    <th>Maintenanceservice</th>
+    <th>Qualityofamenities</th>
+    <th>Noise</th>
+    <th>Title</th>
+    <th>Reviewdesc</th>
+    <th>Nickname</th>
+    <th>Email</th>
+    <th>Location</th>
+    <th>Reviewertype</th>
+    <th>Professional</th>
+    <th>Emailonpost</th>
+    <th>Emailoncomment</th>
+    <th>Publishsocial</th>
+    <th>Ipaddress</th>
+    <th>Propertyid</th>
+    <th>Reviewid</th>
+    <th>Featuredreview</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reviews.each do |review| %>
+  <tr>
+    <td><%= review.overall %></td>
+    <td><%= review.locscore %></td>
+    <td><%= review.overallvalue %></td>
+    <td><%= review.officestaff %></td>
+    <td><%= review.maintenanceservice %></td>
+    <td><%= review.qualityofamenities %></td>
+    <td><%= review.noise %></td>
+    <td><%= review.title %></td>
+    <td><%= review.reviewdesc %></td>
+    <td><%= review.nickname %></td>
+    <td><%= review.email %></td>
+    <td><%= review.location %></td>
+    <td><%= review.reviewertype %></td>
+    <td><%= review.professional %></td>
+    <td><%= review.emailonpost %></td>
+    <td><%= review.emailoncomment %></td>
+    <td><%= review.publishsocial %></td>
+    <td><%= review.ipaddress %></td>
+    <td><%= review.propertyid %></td>
+    <td><%= review.reviewid %></td>
+    <td><%= review.featuredreview %></td>
+    <td><%= link_to 'Show', review %></td>
+    <td><%= link_to 'Edit', edit_review_path(review) %></td>
+    <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Review', new_review_path %>

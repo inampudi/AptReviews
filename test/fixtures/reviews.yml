@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  overall: 1
+  locscore: 1
+  overallvalue: 1
+  officestaff: 1
+  maintenanceservice: 1
+  qualityofamenities: 1
+  noise: 1
+  title: MyString
+  reviewdesc: MyText
+  nickname: MyString
+  email: MyString
+  location: MyString
+  reviewertype: 1
+  professional: false
+  emailonpost: false
+  emailoncomment: false
+  publishsocial: false
+  ipaddress: MyString
+  propertyid: 1
+  reviewid: 1
+  featuredreview: false
+
+two:
+  overall: 1
+  locscore: 1
+  overallvalue: 1
+  officestaff: 1
+  maintenanceservice: 1
+  qualityofamenities: 1
+  noise: 1
+  title: MyString
+  reviewdesc: MyText
+  nickname: MyString
+  email: MyString
+  location: MyString
+  reviewertype: 1
+  professional: false
+  emailonpost: false
+  emailoncomment: false
+  publishsocial: false
+  ipaddress: MyString
+  propertyid: 1
+  reviewid: 1
+  featuredreview: false
