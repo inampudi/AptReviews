@@ -9,10 +9,8 @@ gem 'sqlite3'
 gem 'ey_config'
 
 platform :ruby do
-  gem 'pg'
   gem 'sqlite3'
   gem 'mysql2'
-  gem 'unicorn'
 end
 
 # Gems used only for assets and not required
