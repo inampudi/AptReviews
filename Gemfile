@@ -4,7 +4,7 @@ gem "rails", "~> 3.2.11"
 
 gem 'simple_form'
 gem 'jquery-rails'
-gem 'rails_autolink'
+#gem 'rails_autolink'
 gem 'ey_config'
 gem 'sqlite3'
 

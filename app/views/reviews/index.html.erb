@@ -1,4 +1,140 @@
-<h1>Listing reviews</h1>
+
+
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=1040, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0" />
+        <title>Apartment Reviews - Rate and Review Apartment Communities | Apartments.com</title>
+
+    <link type="text/css" rel="stylesheet" href="http://css.aptcdn.com/RMM/ACW/Apts/CSS/aptMainGlobal-ver10059.css" media="screen"  />
+    <link type="text/css" rel="stylesheet" href="http://css.aptcdn.com/RMM/ACW/CSS/apts-print-ver10059.css" media="print" />
+
+        
+        <link rel="stylesheet" type="text/css" href="http://css.aptcdn.com/RMM/ACW/CSS/apts-reviews-ver10059.css" />
+
+         
+    <meta name="description" content="Apartments.com helps you rate and review your apartment community experience. Interested in moving? Search Apartments.com for reviews to find the perfect community based on our unique 6 point rating system." />
+    <meta name="keywords" content="apartment reviews, apartment ratings, ratings and reviews, review your apartment, reviews of apartments, ratings for apartments, rental reviews, rental ratings, property reviews, landlord reviews, community reviews" />
+
+    <link rel="canonical" href="http://www.apartments.com/reviews/" /> 
+        
+    <link rel="icon" href="http://graphics.aptcdn.com/ACW/Apts/Images/favicon.ico" />
+    <link rel="shortcut icon" href="http://graphics.aptcdn.com/ACW/Apts/Images/favicon.ico" />
+
+    
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="http://www.apartments.com/reviews/" />
+    <meta property="og:title"       content="Apartment Reviews - Rate and Review Apartment Communities | Apartments.com" />
+    <meta property="og:description" content="Apartments.com helps you rate and review your apartment community experience. Interested in moving? Search Apartments.com for reviews to find the perfect community based on our unique 6 point rating system." />
+    <meta property="og:image"       content="http://graphics.aptcdn.com/ACW/Apts/Images/aptlogo-ver10059.png" />
+    
+    <meta itemprop="name"           content="Apartment Reviews - Rate and Review Apartment Communities | Apartments.com">
+    <meta itemprop="description"    content="Apartments.com helps you rate and review your apartment community experience. Interested in moving? Search Apartments.com for reviews to find the perfect community based on our unique 6 point rating system.">
+
+
+
+
+<header itemscope itemtype="http://schema.org/WPHeader">
+    <div class="headerwrapper">
+        <div class="headercont-Home">
+            <a href="/"><img class="aptlogo" src="http://graphics.aptcdn.com/ACW/Apts/Images/aptlogo-ver10059.png" width="222" height="95" alt="apartments.com" title="apartments.com" /></a>
+            <div class="box735 tagline-mainmenu">
+               
+
+    
+    <div id='home-nav-top'></div>
+
+           
+
+                <div class="clear">&nbsp;</div> 
+                    <div class="headerNav">
+                        <ul>
+                            <li class="seach-for-rentals-tab"><a id="search-for-rentals-tab" title="Find your perfect fit." href="/" data-nav="search" data-om="link" data-om-linkname="search_tab">Search</a></li>
+                            <li class="reviews-tab"><a id="reviews-tab" href="/reviews" title="Apartments.com Reviews" data-nav="reviews" data-om="link" data-om-linkname="reviews_tab">Reviews</a></li>
+                            <li class="apartment-living-tab"><a id="apartment-living-tab" href="http://living.apartments.com/" title="Everything you need to know about living in an apartment. Browse useful information on landlords, leases, budgeting, moving, gardening, decorating and more." data-om="link" data-om-linkname="aptliving_tab">Apartment Living</a></li>
+                            <li class="frbo-tab"><a id="frbo-tab" href="/BronzeRouter.aspx" title="Place an ad" data-om="link" data-om-linkname="frbo_tab">Place an Ad</a></li>
+                            <li class="manager-center-tab"><a id="manager-center-tab" href="/propertymall/index.aspx?lid=hp_Mgr_Center_Tab" title="Information and Tools for Apartments.com Advertisers: Update your ad, access reporting tools, learn more about Apartments.com products and more." data-om="link" data-om-linkname="manager_center_tab">Manager Center</a></li>
+                        </ul>
+                        <div class="clear">&nbsp;</div>
+                    </div>
+            </div>                  
+            <div class="clear-no-haslayout">&nbsp;</div>
+            </div>
+        </div>
+        <div class="header-greenbar">&nbsp;</div>
+</header>
+
+
+<section id="sample-review-container">
+    <div id="sample-review">
+    
+
+
+<% @reviews.each do |review| %>
+        <div id="sample-review-text">
+            <p>
+                <strong class="title"><%= review.title %></strong><br />
+                by <%= review.nickname %> on September 25, 2012<br />
+                <em>Currently lives here: Reviewer Type <%= review.reviewertype %> </em>
+            </p>
+
+            <p><%= review.reviewdesc %></p>
+        </div>
+        <div id="sample-review-rating">
+            <div class="title">
+                <div class="star-filled"></div><div class="star-filled"></div><div class="star-filled"></div><div class="star-filled"></div><div class="star-empty"></div> 
+                4 of 5
+            </div>
+        </div>    
+            <div class="rating-container">
+                <div class="rating-criteria">Location/Neighborhood:</div>
+                <div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-empty"></div>
+                <div class="rating-numeric">4.0 of 5</div>
+                <div class="clear"></div>
+            </div>
+            <div class="rating-container">
+                <div class="rating-criteria">Overall Value:</div>
+                <div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-empty"></div>
+                <div class="rating-numeric">4.0 of 5</div>
+                <div class="clear"></div>
+            </div>
+            <div class="rating-container">
+                <div class="rating-criteria">Office Staff:</div>
+                <div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-empty"></div>
+                <div class="rating-numeric">4.0 of 5</div>
+                <div class="clear"></div>
+            </div>
+            <div class="rating-container">
+                <div class="rating-criteria">Maintenance Service:</div>
+                <div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-empty"></div><div class="rating-empty"></div>
+                <div class="rating-numeric">3.0 of 5</div>
+                <div class="clear"></div>
+            </div>
+            <div class="rating-container">
+                <div class="rating-criteria">Quality of Amenities:</div>
+                <div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-empty"></div>
+                <div class="rating-numeric">4.0 of 5</div>
+                <div class="clear"></div>
+            </div>
+            <div class="rating-container">
+                <div class="rating-criteria">Noise:</div>
+                <div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-filled"></div><div class="rating-empty"></div>
+                <div class="rating-numeric">4.0 of 5</div>
+                <div class="clear"></div>
+            </div>      
+        </div>
+        <div class="clear"></div>
+    </div>
+
+<% end %>
+
+    <div class="clear"></div>
+</section>
+
+
+
+
 
 <table>
   <tr>
